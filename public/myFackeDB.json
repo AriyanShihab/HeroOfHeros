@@ -1,0 +1,65 @@
+[
+  {
+    "_id": "1",
+    "name": "Milestone 1: Personal Portfolio",
+    "description": "",
+    "image": "https://phero-web.nyc3.cdn.digitaloceanspaces.com/promotional-images/Frame-2.jpg",
+    "timeTake": 5
+  },
+  {
+    "_id": "2",
+    "name": "Milestone 2: Responsive Web Layout",
+    "description": "",
+    "image": "https://phero-web.nyc3.cdn.digitaloceanspaces.com/promotional-images/Frame-3.jpg",
+    "timeTake": 7
+  },
+  {
+    "_id": "3",
+    "name": "Milestone 3: CSS Frameworks",
+    "description": "",
+    "image": "https://phero-web.nyc3.cdn.digitaloceanspaces.com/promotional-images/Frame-4.jpg",
+    "timeTake": 10
+  },
+  {
+    "_id": "4",
+    "name": "Milestone 4: Introduction to JavaScript",
+    "description": "Learn JavaScript basic concepts. Explore simple problem solving, understand recursion and fundamental programming concepts",
+    "image": "https://phero-web.nyc3.cdn.digitaloceanspaces.com/promotional-images/Frame-6.jpg",
+    "timeTake": 15
+  },
+  {
+    "_id": "5",
+    "name": "Milestone 5: Integrate JavaScript",
+    "description": "Explore DOM. How don works. Add Event bubbles. Create simple interactive website like bank transactions, shopping cart, etc.",
+    "image": "https://phero-web.nyc3.cdn.digitaloceanspaces.com/promotional-images/Frame-7.jpg",
+    "timeTake": 12
+  },
+  {
+    "_id": "6",
+    "name": "Milestone 6: Intermediate JavaScript, API",
+    "description": "Modern JavaScript, ES6, Create Dynamic Website. Implement API. Fetch API and understand tricky javaScript concepts.",
+    "image": "https://phero-web.nyc3.cdn.digitaloceanspaces.com/promotional-images/Frame-8.jpg",
+    "timeTake": 18
+  },
+  {
+    "_id": "7",
+    "name": "Milestone 7: Explore Browser & Debug",
+    "description": "Explore Browser. Debug JavaScript application. Use Dev tool. Introduction to TypeScript, Regular Expression",
+    "image": "https://phero-web.nyc3.cdn.digitaloceanspaces.com/promotional-images/Frame-9.jpg",
+    "timeTake": 15
+  },
+  {
+    "_id": "8",
+    "name": "Milestone 8: Introduction to Simple React",
+    "description": "React Core concepts. Understanding Props, states, components. How React Works. Build Single Page Application using React.",
+    "image": "https://phero-web.nyc3.cdn.digitaloceanspaces.com/promotional-images/Frame-10.jpg",
+    "timeTake": 25
+  },
+  {
+    "_id": "9",
+    "name": "Milestone: 9 React Router and States",
+    "description": "React Router Version 6, Material UI, Axios, Context API, Deploy",
+    "image": "https://phero-web.nyc3.cdn.digitaloceanspaces.com/promotional-images/Frame-11.jpg",
+    "timeTake": 22
+  }
+]
