@@ -6,6 +6,7 @@ const Dashboard = () => {
   // state for store milestones
   const [mileStones, setMileStones] = useState([]);
   const [exerciseTime, setExerciseTime] = useState(0);
+  const [breakTmie, setBreakTmie] = useState(0);
   // fetch mileStone Data
   useEffect(() => {
     fetch(`https://ariyanshihab.github.io/assignmentAPI/myFackeDB.json`)
@@ -66,16 +67,28 @@ const Dashboard = () => {
           <div className=" mt-5  rounded bg-white   p-3 border border-gray-800 border-opacity-20">
             <h2 className="font-bold text-gray-800 text-xl">Add A Break</h2>
             <div className="flex justify-between">
-              <h2 className="m-1 p-3 h-[40px] w-[40px] font-extrabold pt-2 bg-indigo-500 text-white rounded-full ">
+              <h2
+                onClick={() => setBreakTmie(10)}
+                className="m-1 p-3 h-[40px] w-[40px] font-extrabold pt-2 bg-indigo-500 text-white rounded-full  cursor-pointer  "
+              >
                 10
               </h2>
-              <h2 className="m-1 p-3 h-[40px] w-[40px] font-extrabold pt-2 bg-indigo-500 text-white rounded-full ">
+              <h2
+                onClick={() => setBreakTmie(20)}
+                className="m-1 p-3 h-[40px] w-[40px] font-extrabold pt-2 bg-indigo-500 text-white rounded-full  cursor-pointer  "
+              >
                 20
               </h2>
-              <h2 className="m-1 p-3 h-[40px] w-[40px] font-extrabold pt-2 bg-indigo-500 text-white rounded-full ">
+              <h2
+                onClick={() => setBreakTmie(30)}
+                className="m-1 p-3 h-[40px] w-[40px] font-extrabold pt-2 bg-indigo-500 text-white rounded-full  cursor-pointer "
+              >
                 30
               </h2>
-              <h2 className="m-1 p-3 h-[40px] w-[40px] font-extrabold pt-2 bg-indigo-500 text-white rounded-full ">
+              <h2
+                onClick={() => setBreakTmie(50)}
+                className="m-1 p-3 h-[40px] w-[40px] font-extrabold pt-2 bg-indigo-500 text-white rounded-full cursor-pointer "
+              >
                 50
               </h2>
             </div>
@@ -92,7 +105,7 @@ const Dashboard = () => {
             </div>
             <div className="flex justify-between p-4 bg-gray-200 rounded m-2 mb-5">
               <h2 className="font-bold text-gray-800 t">Break time</h2>
-              <p>SomeThing</p>
+              <p>{breakTmie}</p>
             </div>
           </div>
           <button className="w-full py-3 rounded font-bold text-white bg-indigo-600 block mt-4">
