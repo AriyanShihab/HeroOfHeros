@@ -5,19 +5,28 @@ import profileImg from "./profile.png";
 const Dashboard = () => {
   // state for store milestones
   const [mileStones, setMileStones] = useState([]);
+  const [exerciseTime, setExerciseTime] = useState(0);
   // fetch mileStone Data
   useEffect(() => {
     fetch(`https://ariyanshihab.github.io/assignmentAPI/myFackeDB.json`)
       .then((res) => res.json())
       .then((data) => setMileStones(data));
   }, []);
-  console.log(mileStones);
+
+  const handelAddToList = (milestoneData) => {
+    setExerciseTime(exerciseTime + milestoneData.timeTake);
+  };
+
   return (
     <div className="lg:w-3/4 mx-auto p-5  md:p-3 bg-gray-200 mt-10 rounded">
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
         <div className="milestone-container grid grid-cols-1 md:grid-cols-3 lg:grid-col-4 gap-4 lg:col-span-3">
           {mileStones.map((milestone) => (
-            <Milestone milestone={milestone} key={milestone._id}></Milestone>
+            <Milestone
+              milestone={milestone}
+              key={milestone._id}
+              handelAddToList={handelAddToList}
+            ></Milestone>
           ))}
         </div>
         <div className="information-holder lg:col-span-1">
@@ -79,7 +88,7 @@ const Dashboard = () => {
             </h2>
             <div className="flex justify-between p-4 bg-gray-200 rounded m-2">
               <h2 className="font-bold text-gray-800 ">Exercise time</h2>
-              <p>Something</p>
+              <p>{exerciseTime}</p>
             </div>
             <div className="flex justify-between p-4 bg-gray-200 rounded m-2 mb-5">
               <h2 className="font-bold text-gray-800 t">Break time</h2>

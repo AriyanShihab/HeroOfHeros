@@ -2,7 +2,7 @@ import React from "react";
 
 const Milestone = (props) => {
   const { name, description, image, timeTake } = props.milestone;
-  //   console.log(name, description, timeTake);
+
   return (
     <div>
       <div className="card p-2 bg-white rounded h-[460px] flex flex-col justify-between">
@@ -15,9 +15,15 @@ const Milestone = (props) => {
         </p>
         <p className=" my-3 bg-indigo-200 p-2 rounded ">
           Time Needed:
-          <span className="font-bold text-indigo-600">{timeTake}</span> hours
+          <span className="font-bold text-xl text-indigo-600">
+            {timeTake}
+          </span>{" "}
+          hours
         </p>
-        <button className="w-full py-3 rounded font-bold text-white bg-indigo-600">
+        <button
+          onClick={() => props.handelAddToList(props.milestone)}
+          className="w-full py-3 rounded font-bold text-white bg-indigo-600"
+        >
           Add To List
         </button>
       </div>
