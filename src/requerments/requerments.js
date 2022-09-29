@@ -37,6 +37,14 @@ THREE QUESTION TO ANSWER
 
 
 
+// REACT USE EFFECT HOOKS
+    useEffect is mainly used is side effects,
+    since, react is UI library so it's only care about render, re-render UI and react with user interaction on the webpage.
+        task we can do using useEffect
+            1: updating DOM
+            2: setting up subcription
+            3: setting up an timer (setInterVal, spcially web-API)
+
 
 
 
