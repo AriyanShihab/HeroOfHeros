@@ -31,10 +31,10 @@ const Dashboard = () => {
   };
 
   return (
-    <div className="lg:w-4/5 mx-auto p-2  md:p-3">
+    <div className="xl:w-4/5 mx-auto p-2  md:p-3">
       <div className="mx-2  bg-gray-800 mt-10 rounded p-3 pb-8 ">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
-          <div className="milestone-container grid grid-cols-1 md:grid-cols-3 lg:grid-col-4 gap-4 lg:col-span-3">
+          <div className="milestone-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-col-4 gap-4 lg:col-span-3">
             {mileStones.map((milestone) => (
               <Milestone
                 milestone={milestone}
@@ -43,7 +43,10 @@ const Dashboard = () => {
               ></Milestone>
             ))}
           </div>
-          <div className="information-holder lg:col-span-1">
+          <div
+            className="information-holder lg:col-span-1 sticky max-w-full top-2"
+            style={{ alignSelf: "start" }}
+          >
             {<UserInfo handelBreakTime={handelBreakTime}></UserInfo>}
 
             {/* display times */}

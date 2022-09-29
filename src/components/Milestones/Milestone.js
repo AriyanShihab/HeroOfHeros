@@ -11,7 +11,7 @@ const Milestone = (props) => {
   };
   return (
     <div>
-      <div className="card p-2 bg-gray-800 border border-gray-50 border-opacity-20 rounded h-[480px] flex flex-col justify-between">
+      <div className="card p-2 bg-gray-800 border border-gray-50 border-opacity-20 rounded sm:h-[500px] md:h-[480px] flex flex-col justify-between">
         <img className="max-w-full rounded" src={image} alt="" />
         <h2 className="font-bold text-gray-200 mt-5 text-xl mb-2">{name}</h2>
         <p className="text-gray-50">
