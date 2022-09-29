@@ -3,9 +3,11 @@ import React, { useState } from "react";
 const Milestone = (props) => {
   const { name, description, image, timeTake } = props.milestone;
   const [buttonText, setButtonText] = useState("Add To List");
-  console.log(description);
+  const [buttonState, setButtonState] = useState(true);
+
   const handelButtonText = () => {
     setButtonText("Added in the list");
+    setButtonState(false);
   };
   return (
     <div>
@@ -29,7 +31,8 @@ const Milestone = (props) => {
             props.handelAddToList(props.milestone);
             handelButtonText();
           }}
-          className="w-full py-3 rounded font-bold text-white bg-indigo-600"
+          style={{ backgroundColor: buttonState ? "#4f46e5" : "#22c55e" }}
+          className="w-full py-3 rounded font-bold text-white"
         >
           {buttonText}
         </button>

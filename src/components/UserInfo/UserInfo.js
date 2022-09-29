@@ -47,6 +47,7 @@ const UserInfo = (props) => {
           <h2
             onClick={() => props.handelBreakTime(10)}
             className="m-1 p-3 h-[40px] w-[40px] font-extrabold pt-2 bg-indigo-500 text-white rounded-full  cursor-pointer  "
+            style={{}}
           >
             10
           </h2>
