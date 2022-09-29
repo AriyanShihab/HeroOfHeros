@@ -2,6 +2,7 @@ import "./App.css";
 import Answer from "./components/Answear/Answer";
 import Dashboard from "./components/Dashbord/Dashboard";
 import Disclaimer from "./components/Disclaimer/Disclaimer";
+import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <Disclaimer></Disclaimer>
       <Dashboard></Dashboard>
       <Answer></Answer>
+      <Footer></Footer>
     </div>
   );
 }
