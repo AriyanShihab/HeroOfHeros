@@ -31,7 +31,7 @@ const Dashboard = () => {
   };
 
   return (
-    <div className="lg:w-3/4 mx-auto p-2  md:p-3">
+    <div className="lg:w-4/5 mx-auto p-2  md:p-3">
       <div className="mx-2  bg-gray-800 mt-10 rounded p-3 pb-8 ">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
           <div className="milestone-container grid grid-cols-1 md:grid-cols-3 lg:grid-col-4 gap-4 lg:col-span-3">
