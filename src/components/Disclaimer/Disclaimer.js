@@ -3,13 +3,13 @@ import React from "react";
 const Disclaimer = () => {
   return (
     <div>
-      <div className=" md:w-3/4 mx-auto m-3 p-4 bg-red-200 rounded border-l-4 border-indigo-500">
+      <div className="md:w-4/5 mt-4 w-[90vw] mx-auto   bg-gray-700 text-gray-200 rounded border-l-4 border-indigo-500 p-2  md:p-3">
         <p>
-          The thought process behind developthis website is, as a student of
-          Prograaming Hero, we do comlite our milestone. since it is also an
-          activites, I thought why not?
-          <span className="text-indigo-500"> Note That: </span> this website
-          fullfeel all requerment of the assignment
+          the thought process for behind develop this website is, as a student
+          of programming Hero we do some multiple task in our day to day life!
+          completing milestone is one of the main activity of this course this
+          is why I decide to develop a web in this concept! it has all the
+          required feature of the assignment 8!
         </p>
       </div>
     </div>

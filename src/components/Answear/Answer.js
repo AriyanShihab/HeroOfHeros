@@ -59,16 +59,18 @@ const Answer = () => {
         <h1 className="font-bold text-2xl text-indigo-600 mt-10 mb-4">
           Usecases of useEffect( ) hooks except fetch data
         </h1>
-        <p className="p-3 bg-gray-700 border-l-4 border-indigo-500 rounded text-gray-200">
-          useEffect is mainly used is side effects, since, react is UI library
-          so it's only care about render, re-render UI and react with user
-          interaction on the webpage. task we can do using useEffect
+        <div className="p-3 bg-gray-700 border-l-4 border-indigo-500 rounded text-gray-200">
+          <p>
+            useEffect is mainly used is side effects, since, react is UI library
+            so it's only care about render, re-render UI and react with user
+            interaction on the webpage. task we can do using useEffect{" "}
+          </p>
           <ul className="ml-2">
             <li>1: updating DOM</li>
             <li>2: setting up subcription </li>
             <li>3: setting up an timer (setInterVal, spcially web-API)</li>
           </ul>
-        </p>
+        </div>
       </div>
     </div>
   );
